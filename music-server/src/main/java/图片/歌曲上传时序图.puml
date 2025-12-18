@@ -1,0 +1,33 @@
+@startuml 歌曲上传时序图
+
+actor 用户 as User
+participant "前端上传" as Frontend
+participant "上传控制器" as UploadController
+participant "文件服务" as FileService
+participant "歌曲服务" as SongService
+participant "数据库" as Database
+participant "云存储" as CloudStorage
+
+User -> Frontend: 选择歌曲文件\n填写歌曲信息
+Frontend -> UploadController: POST /upload/song\n文件+元数据
+UploadController -> FileService: validateFile(file)
+FileService --> UploadController: 文件验证结果
+
+alt 文件验证通过
+    UploadController -> FileService: uploadToStorage(file)
+    FileService -> CloudStorage: 上传文件
+    CloudStorage --> FileService: 返回文件URL
+    FileService --> UploadController: 返回存储路径
+
+    UploadController -> SongService: createSong(songInfo, fileUrl)
+    SongService -> Database: 插入歌曲记录
+    Database --> SongService: 返回歌曲ID
+    SongService --> UploadController: 返回创建结果
+    UploadController --> Frontend: 返回上传成功\n{歌曲ID}
+    Frontend --> User: 显示上传成功
+else 文件验证失败
+    UploadController --> Frontend: 返回错误信息
+    Frontend --> User: 显示上传失败原因
+end
+
+@enduml

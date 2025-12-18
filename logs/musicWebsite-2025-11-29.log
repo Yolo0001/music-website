@@ -1,0 +1,182 @@
+2025-11-29 10:53:53 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 1.8.0_112 on DESKTOP-BL509D7 with PID 3020 (D:\Work\USERPROG\github\music-website-master\music-server\target\classes started by liam in D:\Work\USERPROG\github\music-website-master)
+2025-11-29 10:53:53 INFO [com.example.yin.YinMusicApplication]: The following profiles are active: dev
+2025-11-29 10:53:53 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29 10:53:53 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29 10:53:54 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-29 10:53:54 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-29 10:53:54 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2025-11-29 10:53:57 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8081 (http)
+2025-11-29 10:53:58 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 4533 ms
+2025-11-29 10:53:59 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2025-11-29 10:53:59 INFO [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver]: Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29 10:53:59 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8081 (http) with context path ''
+2025-11-29 10:53:59 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 6.779 seconds (JVM running for 8.406)
+2025-11-29 10:54:00 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2025-11-29 10:54:00 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2025-11-29 10:54:00 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 2 ms
+2025-11-29 10:54:00 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2025-11-29 12:17:20 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2025-11-29 12:17:20 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.
+2025-11-29 12:17:22 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 1.8.0_112 on DESKTOP-BL509D7 with PID 14940 (D:\Work\USERPROG\github\music-website-master\music-server\target\classes started by liam in D:\Work\USERPROG\github\music-website-master)
+2025-11-29 12:17:22 INFO [com.example.yin.YinMusicApplication]: The following profiles are active: dev
+2025-11-29 12:17:22 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29 12:17:22 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29 12:17:23 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-29 12:17:23 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-29 12:17:23 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2025-11-29 12:17:25 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8081 (http)
+2025-11-29 12:17:25 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 3015 ms
+2025-11-29 12:17:26 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2025-11-29 12:17:26 INFO [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver]: Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29 12:17:26 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8081 (http) with context path ''
+2025-11-29 12:17:26 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 4.504 seconds (JVM running for 5.42)
+2025-11-29 12:17:27 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2025-11-29 12:17:27 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 0 ms
+2025-11-29 12:17:27 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2025-11-29 12:17:27 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2025-11-29 12:45:46 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET /song-sheet
+2025-11-29 12:45:48 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET /.well-known/appspecific/com.chrome.devtools.json
+2025-11-29 12:45:49 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET /favicon.ico
+2025-11-29 12:52:12 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2025-11-29 12:52:12 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.
+2025-11-29 12:55:22 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 1.8.0_112 on DESKTOP-BL509D7 with PID 11360 (D:\Work\USERPROG\github\music-website-master\music-server\target\classes started by liam in D:\Work\USERPROG\github\music-website-master)
+2025-11-29 12:55:22 INFO [com.example.yin.YinMusicApplication]: The following profiles are active: dev
+2025-11-29 12:55:22 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29 12:55:22 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29 12:55:23 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-29 12:55:23 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-29 12:55:23 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-11-29 12:55:25 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8081 (http)
+2025-11-29 12:55:25 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 2977 ms
+2025-11-29 12:55:26 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2025-11-29 12:55:26 INFO [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver]: Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29 12:55:26 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8081 (http) with context path ''
+2025-11-29 12:55:26 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 4.484 seconds (JVM running for 5.432)
+2025-11-29 12:55:27 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2025-11-29 12:55:27 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 4 ms
+2025-11-29 12:55:27 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2025-11-29 12:55:27 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2025-11-29 13:03:50 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET /img/user.jpg
+2025-11-29 13:04:15 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET /img/user.jpg
+2025-11-29 13:04:45 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET /img/user.jpg
+2025-11-29 13:05:41 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET /img/user.jpg
+2025-11-29 13:15:39 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2025-11-29 13:15:39 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.
+2025-11-29 13:15:43 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 1.8.0_112 on DESKTOP-BL509D7 with PID 10092 (D:\Work\USERPROG\github\music-website-master\music-server\target\classes started by liam in D:\Work\USERPROG\github\music-website-master)
+2025-11-29 13:15:43 INFO [com.example.yin.YinMusicApplication]: The following profiles are active: dev
+2025-11-29 13:15:43 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29 13:15:43 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29 13:15:44 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-29 13:15:44 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-29 13:15:44 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-11-29 13:15:46 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8081 (http)
+2025-11-29 13:15:46 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 3242 ms
+2025-11-29 13:15:48 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2025-11-29 13:15:48 INFO [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver]: Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29 13:15:48 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8081 (http) with context path ''
+2025-11-29 13:15:48 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 5.309 seconds (JVM running for 6.633)
+2025-11-29 13:15:48 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2025-11-29 13:15:48 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2025-11-29 13:15:49 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2025-11-29 13:15:49 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 1 ms
+2025-11-29 13:16:48 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET //singer/img/linjunjie.jpg
+2025-11-29 13:16:59 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET //singer/img/linjunjie.jpg
+2025-11-29 13:17:12 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET //singer/img/linjunjie.jpg
+2025-11-29 13:20:21 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2025-11-29 13:20:21 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.
+2025-11-29 13:20:29 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 1.8.0_112 on DESKTOP-BL509D7 with PID 12860 (D:\Work\USERPROG\github\music-website-master\music-server\target\classes started by liam in D:\Work\USERPROG\github\music-website-master)
+2025-11-29 13:20:29 INFO [com.example.yin.YinMusicApplication]: The following profiles are active: dev
+2025-11-29 13:20:29 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29 13:20:29 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29 13:20:30 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-29 13:20:30 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-29 13:20:30 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-11-29 13:20:33 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8081 (http)
+2025-11-29 13:20:33 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 3471 ms
+2025-11-29 13:20:34 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2025-11-29 13:20:34 INFO [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver]: Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29 13:20:34 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8081 (http) with context path ''
+2025-11-29 13:20:34 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 5.183 seconds (JVM running for 6.123)
+2025-11-29 13:20:34 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2025-11-29 13:20:34 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 1 ms
+2025-11-29 13:20:34 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2025-11-29 13:20:35 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2025-11-29 13:20:48 WARN [org.springframework.web.servlet.PageNotFound]: No mapping for GET //singer/img/linjunjie.jpg
+2025-11-29 14:32:44 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2025-11-29 14:32:44 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.
+2025-11-29 14:32:49 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 1.8.0_112 on DESKTOP-BL509D7 with PID 15448 (D:\Work\USERPROG\github\music-website-master\music-server\target\classes started by liam in D:\Work\USERPROG\github\music-website-master)
+2025-11-29 14:32:49 INFO [com.example.yin.YinMusicApplication]: The following profiles are active: dev
+2025-11-29 14:32:49 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29 14:32:49 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29 14:32:50 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-29 14:32:50 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-29 14:32:50 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-11-29 14:32:52 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8081 (http)
+2025-11-29 14:32:52 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 3350 ms
+2025-11-29 14:32:54 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2025-11-29 14:32:54 INFO [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver]: Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29 14:32:54 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8081 (http) with context path ''
+2025-11-29 14:32:54 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 5.59 seconds (JVM running for 6.451)
+2025-11-29 14:32:55 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2025-11-29 14:32:55 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2025-11-29 14:32:55 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2025-11-29 14:32:55 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 0 ms
+2025-11-29 14:40:05 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2025-11-29 14:40:05 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.
+2025-11-29 14:40:09 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 1.8.0_112 on DESKTOP-BL509D7 with PID 6212 (D:\Work\USERPROG\github\music-website-master\music-server\target\classes started by liam in D:\Work\USERPROG\github\music-website-master)
+2025-11-29 14:40:09 INFO [com.example.yin.YinMusicApplication]: The following profiles are active: dev
+2025-11-29 14:40:09 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29 14:40:09 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29 14:40:10 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-29 14:40:10 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-29 14:40:10 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-11-29 14:40:12 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8081 (http)
+2025-11-29 14:40:13 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 3829 ms
+2025-11-29 14:40:14 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2025-11-29 14:40:14 INFO [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver]: Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29 14:40:14 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8081 (http) with context path ''
+2025-11-29 14:40:14 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 5.921 seconds (JVM running for 6.957)
+2025-11-29 14:40:14 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2025-11-29 14:40:14 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 0 ms
+2025-11-29 14:40:15 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2025-11-29 14:40:15 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2025-11-29 14:48:02 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2025-11-29 14:48:02 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.
+2025-11-29 14:48:07 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 1.8.0_112 on DESKTOP-BL509D7 with PID 11960 (D:\Work\USERPROG\github\music-website-master\music-server\target\classes started by liam in D:\Work\USERPROG\github\music-website-master)
+2025-11-29 14:48:07 INFO [com.example.yin.YinMusicApplication]: The following profiles are active: dev
+2025-11-29 14:48:07 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29 14:48:07 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29 14:48:09 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-29 14:48:09 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-29 14:48:09 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-11-29 14:48:11 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8081 (http)
+2025-11-29 14:48:11 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 3739 ms
+2025-11-29 14:48:12 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2025-11-29 14:48:12 INFO [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver]: Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29 14:48:12 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8081 (http) with context path ''
+2025-11-29 14:48:12 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 5.501 seconds (JVM running for 6.557)
+2025-11-29 14:48:13 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2025-11-29 14:48:13 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 2 ms
+2025-11-29 14:48:13 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2025-11-29 14:48:13 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2025-11-29 15:19:48 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2025-11-29 15:19:48 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.
+2025-11-29 15:19:51 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 1.8.0_112 on DESKTOP-BL509D7 with PID 9852 (D:\Work\USERPROG\github\music-website-master\music-server\target\classes started by liam in D:\Work\USERPROG\github\music-website-master)
+2025-11-29 15:19:51 INFO [com.example.yin.YinMusicApplication]: The following profiles are active: dev
+2025-11-29 15:19:51 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29 15:19:51 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29 15:19:52 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-29 15:19:52 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-29 15:19:52 INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate]: Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-11-29 15:19:55 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8081 (http)
+2025-11-29 15:19:55 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 3531 ms
+2025-11-29 15:19:56 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2025-11-29 15:19:56 INFO [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver]: Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29 15:19:56 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8081 (http) with context path ''
+2025-11-29 15:19:56 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 5.127 seconds (JVM running for 6.413)
+2025-11-29 15:19:56 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2025-11-29 15:19:56 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 1 ms
+2025-11-29 15:19:56 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2025-11-29 15:19:56 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2025-11-29 18:46:12 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2025-11-29 18:46:12 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.

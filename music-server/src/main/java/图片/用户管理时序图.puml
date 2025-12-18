@@ -1,0 +1,30 @@
+@startuml 用户管理时序图
+
+actor 管理员 as Admin
+participant "管理后台" as AdminPanel
+participant "用户管理控制器" as UserController
+participant "用户服务" as UserService
+participant "数据库" as Database
+
+Admin -> AdminPanel: 进入用户管理页面
+AdminPanel -> UserController: GET /admin/users\n{page, size, keyword}
+UserController -> UserController: 验证管理员权限
+UserController -> UserService: getUsersByPage(page, size, keyword)
+UserService -> Database: 分页查询用户列表\ncount + data
+Database --> UserService: 返回用户数据和总数
+UserService --> UserController: 返回分页结果
+UserController --> AdminPanel: 返回用户列表数据
+AdminPanel --> Admin: 渲染用户列表
+
+Admin -> AdminPanel: 点击封禁用户
+AdminPanel -> UserController: PUT /admin/user/ban/{userId}
+UserController -> UserController: 验证操作权限
+UserController -> UserService: banUser(userId, reason)
+UserService -> Database: 更新用户状态为封禁\n设置封禁原因
+Database --> UserService: 更新成功
+UserService -> UserService: 清除用户登录状态
+UserService --> UserController: 返回操作结果
+UserController --> AdminPanel: 返回成功信息
+AdminPanel --> Admin: 显示"用户封禁成功"\n更新列表状态
+
+@enduml

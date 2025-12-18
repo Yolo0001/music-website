@@ -1,0 +1,31 @@
+@startuml 歌单推荐时序图
+
+actor 管理员 as Admin
+participant "推荐管理页面" as RecommendPage
+participant "推荐控制器" as RecommendController
+participant "推荐服务" as RecommendService
+participant "缓存服务" as CacheService
+participant "数据库" as Database
+
+Admin -> RecommendPage: 进入推荐管理
+RecommendPage -> RecommendController: GET /admin/recommend/lists
+RecommendController -> RecommendService: getRecommendableSongLists()
+RecommendService -> Database: 查询可推荐歌单\n按热度排序
+Database --> RecommendService: 返回歌单列表
+RecommendService --> RecommendController: 返回歌单数据
+RecommendController --> RecommendPage: 返回歌单列表
+RecommendPage --> Admin: 显示可推荐歌单
+
+Admin -> RecommendPage: 设置首页推荐歌单
+RecommendPage -> RecommendController: POST /admin/recommend/homepage\n{songListIds, position}
+RecommendController -> RecommendController: 验证操作权限
+RecommendController -> RecommendService: setHomepageRecommend(songListIds, position)
+RecommendService -> Database: 更新推荐设置\n保存推荐位配置
+Database --> RecommendService: 更新成功
+RecommendService -> CacheService: clearCache("homepage:recommend")
+CacheService --> RecommendService: 缓存清除成功
+RecommendService --> RecommendController: 返回设置结果
+RecommendController --> RecommendPage: 返回成功信息
+RecommendPage --> Admin: 显示"推荐设置成功"
+
+@enduml

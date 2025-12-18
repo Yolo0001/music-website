@@ -1,0 +1,100 @@
+@startuml
+class Singer {
+    -id :Integer
+    -name: String
+    -sex :Byte
+    -pic :String
+    -birth: Date
+    -location: String
+    -introduction: String
+    
+    +toString() :String
+}
+
+class Song {
+    id: Integer
+    singerId: Integer
+    name: String
+    introduction: String
+    pic: String
+    lyric: String
+    url: String
+    +toString() :String
+}
+
+Singer "1" <-- "*" Song
+
+Song "1" <-- "1" Comment
+SongList  <--  Comment
+
+Song  <--  ListSong
+SongList  <--  ListSong
+
+
+SongList  <--  RankList
+Consumer  <--  RankList
+
+Song "*" <-- "*" Collect
+SongList  <--  Collect
+
+
+
+class SongList {
+  -id: Integer
+  -title: String
+  -pic: String
+  -style: String
+  -introduction: String
+   +toString(): String
+}
+
+class Consumer {
+    -id : Integer
+    -username : String
+    -password: String
+    -sex: Byte
+    -phoneNum : String
+    -email: String
+    -birth: Date
+    -introductio: String
+    -location String
+    +toString() :String
+}
+
+class Collect {
+  -id: Integer
+  -userId: Integer
+  -type: Byte
+  -songId: Integer
+  -songListId: Integer
+  +toString(): String
+}
+
+class RankList {
+  -id: Long
+  -songListId: Long
+  -consumerId: Long
+  -score: Integer
+  +toString(): String
+}
+
+class Comment {
+  -id: Integer
+  -userId: Integer
+  -songId: Integer
+  -songListId: Integer
+  -content: String
+  -createTime: Date
+  -type: Byte
+  -up: Integer
+  +toString(): String
+}
+
+class ListSong {
+  -id: Integer
+  -songId: Integer
+  -songListId: Integer
+  +toString(): String
+}
+
+@enduml

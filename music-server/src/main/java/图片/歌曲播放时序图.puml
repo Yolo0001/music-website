@@ -1,0 +1,35 @@
+@startuml 歌曲播放时序图
+
+actor 用户 as User
+participant "前端播放器" as Player
+participant "歌曲控制器" as SongController
+participant "歌曲服务" as SongService
+participant "数据库" as Database
+participant "文件存储" as FileStorage
+
+User -> Player: 点击播放歌曲
+Player -> SongController: GET /song/detail/{songId}
+SongController -> SongService: getSongById(songId)
+SongService -> Database: 查询歌曲信息
+Database --> SongService: 返回歌曲数据
+SongService --> SongController: 返回歌曲详情
+SongController --> Player: 返回歌曲信息\n{name, artist, duration}
+
+Player -> SongController: GET /song/url/{songId}
+SongController -> SongService: getSongUrl(songId)
+SongService -> FileStorage: 获取歌曲文件URL
+FileStorage --> SongService: 返回文件URL
+SongService --> SongController: 返回播放地址
+SongController --> Player: 返回歌曲URL
+
+Player -> Player: 初始化音频播放器
+Player -> Player: 开始播放音乐
+Player --> User: 更新播放界面
+
+loop 播放过程中
+    User -> Player: 暂停/继续/切歌
+    Player -> Player: 更新播放状态
+    Player --> User: 更新UI反馈
+end
+
+@enduml

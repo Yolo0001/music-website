@@ -1,0 +1,21 @@
+@startuml 评论提交时序图
+
+actor 用户 as User
+participant "前端页面" as Frontend
+participant "评论控制器" as CommentController
+participant "评论服务" as CommentService
+participant "数据库" as Database
+
+User -> Frontend: 输入评论内容
+Frontend -> CommentController: POST /comment/add\n{content, songId, type}
+CommentController -> CommentController: 验证用户登录状态
+CommentController -> CommentController: 设置用户ID和创建时间
+CommentController -> CommentService: addComment(commentDTO)
+CommentService -> Database: 插入评论记录
+Database --> CommentService: 返回评论ID
+CommentService --> CommentController: 返回完整评论数据
+CommentController --> Frontend: 返回评论信息\n{id, content, userName, createTime}
+Frontend -> Frontend: 添加到评论列表
+Frontend --> User: 显示新发表的评论
+
+@enduml

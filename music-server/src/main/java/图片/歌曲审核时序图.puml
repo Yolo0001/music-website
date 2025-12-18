@@ -1,0 +1,33 @@
+@startuml 歌曲审核时序图
+
+actor 管理员 as Admin
+participant "审核页面" as AuditPage
+participant "审核控制器" as AuditController
+participant "歌曲服务" as SongService
+participant "消息服务" as MessageService
+participant "数据库" as Database
+
+Admin -> AuditPage: 进入歌曲审核页面
+AuditPage -> AuditController: GET /admin/songs/pending
+AuditController -> SongService: getPendingSongs()
+SongService -> Database: 查询待审核歌曲\nstatus = 0
+Database --> SongService: 返回待审核歌曲列表
+SongService --> AuditController: 返回歌曲数据
+AuditController --> AuditPage: 返回待审核列表
+AuditPage --> Admin: 显示待审核歌曲
+
+Admin -> AuditPage: 审核通过歌曲
+AuditPage -> AuditController: POST /admin/song/approve\n{songId, remark}
+AuditController -> AuditController: 验证审核权限
+AuditController -> SongService: approveSong(songId, adminId, remark)
+SongService -> Database: 更新歌曲状态为通过\n设置审核时间和审核人
+Database --> SongService: 更新成功
+SongService -> MessageService: notifySongApproved(songId, remark)
+MessageService -> Database: 插入通知消息给上传者
+Database --> MessageService: 插入成功
+MessageService --> SongService: 通知发送成功
+SongService --> AuditController: 返回审核结果
+AuditController --> AuditPage: 返回审核成功
+AuditPage --> Admin: 显示"审核通过"\n从列表移除该歌曲
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml 歌单创建时序图
+
+actor 用户 as User
+participant "前端页面" as Frontend
+participant "歌单控制器" as ListController
+participant "歌单服务" as ListService
+participant "数据库" as Database
+
+User -> Frontend: 填写歌单信息\n{title, style, introduction}
+Frontend -> ListController: POST /songlist/create\n{歌单数据}
+ListController -> ListController: 参数验证
+ListController -> ListService: createSongList(songListDTO)
+ListService -> ListService: 设置创建者ID
+ListService -> Database: 插入歌单记录
+Database --> ListService: 返回生成ID
+ListService --> ListController: 返回创建结果
+ListController --> Frontend: 返回成功响应\n{歌单ID}
+Frontend --> User: 显示创建成功\n跳转到歌单页
+
+@enduml

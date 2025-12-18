@@ -1,0 +1,41 @@
+@startuml 数据统计时序图
+
+actor 管理员 as Admin
+participant "统计页面" as StatsPage
+participant "统计控制器" as StatsController
+participant "统计服务" as StatsService
+participant "Redis缓存" as Redis
+participant "数据库" as Database
+
+Admin -> StatsPage: 进入数据统计页面
+StatsPage -> StatsController: GET /admin/stats/dashboard
+StatsController -> StatsService: getDashboardStats()
+
+StatsService -> Redis: get("stats:dashboard")
+alt 缓存存在且未过期
+    Redis --> StatsService: 返回缓存数据
+    StatsService --> StatsController: 返回统计信息
+else 缓存不存在
+    StatsService -> Database: 查询总用户数
+    Database --> StatsService: 返回用户数量
+
+    StatsService -> Database: 查询总歌曲数
+    Database --> StatsService: 返回歌曲数量
+
+    StatsService -> Database: 查询今日活跃用户
+    Database --> StatsService: 返回活跃用户数
+
+    StatsService -> Database: 查询最近7天播放量
+    Database --> StatsService: 返回播放统计数据
+
+    StatsService -> StatsService: 组装统计报表数据
+    StatsService -> Redis: set("stats:dashboard", data, expire=1h)
+    Redis --> StatsService: 缓存成功
+    StatsService --> StatsController: 返回统计信息
+end
+
+StatsController --> StatsPage: 返回仪表盘数据
+StatsPage -> StatsPage: 渲染图表和指标
+StatsPage --> Admin: 显示数据统计仪表盘
+
+@enduml

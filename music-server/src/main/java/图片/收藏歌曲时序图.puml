@@ -1,0 +1,32 @@
+@startuml 收藏歌曲时序图
+
+actor 用户 as User
+participant "前端组件" as Frontend
+participant "收藏控制器" as CollectController
+participant "收藏服务" as CollectService
+participant "数据库" as Database
+
+User -> Frontend: 点击收藏按钮
+Frontend -> CollectController: POST /collect/add\n{songId, type}
+CollectController -> CollectController: 获取当前用户ID
+CollectController -> CollectService: addCollect(userId, songId, type)
+CollectService -> Database: 查询是否已收藏
+Database --> CollectService: 返回收藏状态
+
+alt 未收藏过
+    CollectService -> Database: 插入收藏记录
+    Database --> CollectService: 插入成功
+    CollectService --> CollectController: 返回收藏成功
+    CollectController --> Frontend: 返回成功状态
+    Frontend -> Frontend: 更新按钮状态为已收藏
+    Frontend --> User: 显示"收藏成功"
+else 已收藏过
+    CollectService -> Database: 删除收藏记录
+    Database --> CollectService: 删除成功
+    CollectService --> CollectController: 返回取消收藏
+    CollectController --> Frontend: 返回取消状态
+    Frontend -> Frontend: 更新按钮状态为未收藏
+    Frontend --> User: 显示"已取消收藏"
+end
+
+@enduml

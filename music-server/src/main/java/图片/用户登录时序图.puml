@@ -1,0 +1,27 @@
+@startuml 用户登录时序图
+
+actor 用户 as User
+participant "前端页面" as Frontend
+participant "认证控制器" as AuthController
+participant "用户服务" as UserService
+participant "数据库" as Database
+
+User -> Frontend: 输入用户名密码
+Frontend -> AuthController: POST /login\n{username, password}
+AuthController -> UserService: verifyUser(username, password)
+UserService -> Database: 查询用户信息\nwhere username=?
+Database --> UserService: 返回用户数据
+UserService -> UserService: 密码验证
+alt 验证成功
+    UserService -> UserService: 生成JWT Token
+    UserService --> AuthController: 返回用户信息+Token
+    AuthController --> Frontend: 登录成功\n返回用户数据和Token
+    Frontend -> Frontend: 存储Token到localStorage
+    Frontend --> User: 跳转到主页
+else 验证失败
+    UserService --> AuthController: 抛出认证异常
+    AuthController --> Frontend: 返回错误信息
+    Frontend --> User: 显示错误提示
+end
+
+@enduml

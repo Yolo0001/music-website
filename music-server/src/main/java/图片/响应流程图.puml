@@ -1,0 +1,24 @@
+@startuml
+
+start
+repeat
+repeat
+:填写用户信息;
+
+backward : 提示用户名已存在;
+repeat while (判断用户名是否存在?) is (是) not (否)
+
+:输入密码;
+:重复输入密码;
+
+
+backward :提示输入密码不一致;
+repeat while (再次输入密码是否相同?) is (否) not (是)
+
+
+:注册成功;
+stop
+
+
+
+@enduml

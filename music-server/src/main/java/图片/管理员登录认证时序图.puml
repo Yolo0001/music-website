@@ -1,0 +1,33 @@
+@startuml 管理员登录时序图
+
+actor 管理员 as Admin
+participant "登录页面" as LoginPage
+participant "认证控制器" as AuthController
+participant "管理员服务" as AdminService
+participant "权限服务" as PermissionService
+participant "数据库" as Database
+
+Admin -> LoginPage: 输入管理员账号密码
+LoginPage -> AuthController: POST /admin/login\n{username, password}
+AuthController -> AdminService: verifyAdmin(username, password)
+AdminService -> Database: 查询管理员信息\nwhere username=?
+Database --> AdminService: 返回管理员数据
+
+alt 账号存在且密码正确
+    AdminService -> PermissionService: getAdminPermissions(adminId)
+    PermissionService -> Database: 查询管理员权限
+    Database --> PermissionService: 返回权限列表
+    PermissionService --> AdminService: 返回权限信息
+
+    AdminService -> AdminService: 生成管理员JWT Token
+    AdminService --> AuthController: 返回管理员信息+权限+Token
+    AuthController --> LoginPage: 登录成功\n返回管理员数据和Token
+    LoginPage -> LoginPage: 存储Token和权限信息
+    LoginPage --> Admin: 跳转到管理后台首页
+else 认证失败
+    AdminService --> AuthController: 抛出认证异常
+    AuthController --> LoginPage: 返回错误信息
+    LoginPage --> Admin: 显示"账号或密码错误"
+end
+
+@enduml
